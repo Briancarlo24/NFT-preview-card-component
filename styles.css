@@ -90,6 +90,7 @@ body {
 
   display: grid;
   place-items: center;
+  transition: all 0.4s;
 }
 .overlay img {
   color: white;
@@ -105,11 +106,7 @@ body {
 }
 .img__container:hover .overlay img {
   opacity: 1;
-  z-index: 12;
-}
-.img__container:hover ~ .heading {
-  opacity: 1;
-  z-index: 12;
+  z-index: 10;
 }
 
 .heading {
@@ -153,10 +150,11 @@ body {
 .profile p {
   margin-left: 2rem;
 }
-.profile span {
+.profile a {
   color: var(--White);
+  text-decoration: none;
 }
-.profile span:hover {
+.profile a:hover {
   cursor: pointer;
   color: var(--Cyan);
 }
